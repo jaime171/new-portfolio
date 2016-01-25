@@ -1,0 +1,16 @@
+mixin header(spec)
+  - spec = spec || {}
+  - spec.__class = spec.__class || ''
+  header
+    .topbar-header
+      a(href="#")
+        img(src="../images/logo.svg" alt="Mission Jimmy Logo", height="140")
+        #triggerDown.menu-display
+          p menu 
+            span.center v
+    .hero-about
+      h1.center
+        span Develop for
+        span people
+
+

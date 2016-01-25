@@ -1,11 +1,14 @@
 // nav styles
 nav
-  background-color: #C64E40
-  display: table
+  background-color: $first-color
   height: 100%
   position: fixed
   width: 100%
-  display: none
+  display: none;
+  div 
+    display: table
+    height: 100%
+    width: 100%
   ul
     display: table-cell
     padding: 0
@@ -13,7 +16,6 @@ nav
   li
     font-size: 32px
     font-weight: bolder
-    list-style: none
     padding: 9px
     text-transform: capitalize
   span 
@@ -21,8 +23,9 @@ nav
     color: white
     cursor: pointer
     font-size: 50px
-    padding: 15px 0 23px 0
+    padding: 5px 0 10px 0
     position: absolute
+    left: 0
     width: 100%
     -moz-transform: rotate(-180deg)
     -ms-transform: rotate(-180deg)
@@ -31,7 +34,6 @@ nav
     filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3)
   span:hover
     background-color: #962619
-
 
 
 

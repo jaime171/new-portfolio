@@ -1,11 +1,19 @@
 // Normalize Styles
 @import node_modules/normalize.css/normalize
 
+$first-color: #C64E40
+$second-color: #2996D3
 // Import Modules
 @import ../_modules/link/link
 @import ../_modules/nav/nav
+@import ../_modules/header/header
+@import ../_modules/footer/footer
 // Box sizing partial styles:
 // Apply a natural box layout model to all elements
+iframe
+  vertical-align: middle
+  margin-top: -19px
+  // margin-top: -20px
 *,
 *:before,
 *:after
@@ -25,5 +33,209 @@
 
 // Custom global styles
 body
-  text-align: center
   font-family: "Lato", sans-serif
+h3
+  border-bottom: solid $second-color 4px
+  display: inline-block
+  font-size: 25px
+  margin: 10% 0 0
+li
+  list-style: none
+
+//Section-1 Styles
+.section-1
+  margin: 0 0 14% 0
+  padding: 3%
+  p 
+    color: black
+    font-size: 25px
+    font-style: italic
+    font-weight: bolder
+  a 
+    border: solid black 4px
+    color: black
+    font-size: 18px
+    font-weight: bolder
+    padding: 6px 16px
+  a:hover
+    color: $first-color
+
+
+
+//Section-2 Styles
+.section-2
+  background: url(/images/bg-section-2.jpg) no-repeat center center fixed
+  -moz-background-size: cover
+  -o-background-size: cover
+  -webkit-background-size: cover
+  background-size: cover
+  height: 400px
+  width: 100%
+  p
+    color: white;
+    font-size: 31px;
+    font-weight: bolder;
+    line-height: 400px;
+    margin: 0 auto;
+    text-decoration: underline;
+
+
+
+//Section-3 Styles
+.video-container
+  margin-top: 10%
+.videos
+  height: 300px
+  width: 100%
+  margin-top: 30px
+  
+.videos
+  .triggers 
+    background-color: rgba(0, 0 ,0 , .9)
+    width: 100%
+    height: 300px
+    display: block
+    cursor: pointer
+    color: white
+    text-shadow: black 1px 1px 5px
+    line-height: 300px
+    font-weight: bolder
+    font-size: 38px
+    position: absolute
+    margin-top: -304px
+
+
+.videos
+  .triggers:hover
+    background-color: rgba(0, 0 ,0 , .6)
+    color: white
+
+video
+  width: 100%
+  height: 100%
+  background-color: rgba(41, 150, 211, .07)
+
+
+
+//Section-4 Styles
+.section-4
+ 
+
+//Section-5 Styles
+
+.section-5
+  p
+    font-size: 25px 
+    background-color: $second-color
+    margin: 8%
+    padding: 20px
+    display: inline-block
+    color: white
+    font-weight: bolder
+
+
+
+
+//About Section Styles
+.about
+  h3
+    margin-bottom: 5px
+  p
+    font-size: 19px
+    text-align: justify
+.left
+  img 
+    width: 100%
+    height: auto
+
+.right
+  h3
+    margin: 10px;
+    font-size: 30px;
+  p 
+    margin: 14px
+    font-size: 18px
+  a 
+    color: $second-color
+
+
+@media (min-width:641px)
+  h3
+    font-size: 32px
+    margin: 5% 0 0
+  .section-1
+    margin: 0 0 10% 0
+    p 
+      font-size: 35px
+    a 
+      font-size: 25px
+  .section-2
+    p
+      font-size: 45px
+      text-shadow: 2px 2px 3px rgba(0, 0, 0, .6)
+  .section-3
+    .video-container 
+      margin-top: 5%
+    .videos
+      display: inline-block
+      height: 200px
+      max-width: 200px;
+      width: 100%
+      margin-top: initial
+      .triggers
+        line-height: 200px
+        width: 200px
+        height: 200px
+        margin-top: -200px
+        font-size: 28px
+
+  .section-5 p 
+    margin: 5% 24%
+  
+@media (min-width:1025px)
+  h3
+    font-size: 40px
+  .section-1
+    margin: 0 0 7% 0
+    p 
+      font-size: 50px
+  .section-3
+    .video-container
+      margin-top: 6%
+    .videos
+      height: 300px
+      max-width: 300px
+      margin: 0 1% 0 1%
+      .triggers
+        line-height: 300px
+        width: 300px
+        height: 300px
+        margin-top: -300px
+        font-size: 35px
+  //About media queries
+  .left
+    float: left
+    margin: 0 0 10% 10%
+    img 
+      width: 450px
+.right
+  float: right
+  width: 500px
+  margin-right: 10%
+  h3
+    margin: 10px;
+    font-size: 30px;
+  p 
+    margin: 14px
+    font-size: 19px
+    line-height: 26px
+  a 
+    color: $second-color
+
+// Hellpers
+.center
+  text-align: center
+
+
+
+

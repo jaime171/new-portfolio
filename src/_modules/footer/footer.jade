@@ -1,0 +1,24 @@
+mixin footer(spec)
+  - spec = spec || {}
+  - spec.__class = spec.__class || ''
+
+  footer
+    img(src="images/logo.svg" alt="Missio Jimmy Logo",height="140")
+    p jaimesalvador.simental@gmail.com
+    p (844) 48 47 999
+    ul.social-bar
+      li
+        a(href="https://twitter.com/jaimesimental" target="_blank")
+          img(src="images/twitter.svg", alt="Twitter Social Media Icon")
+      li
+        a(href="https://mx.linkedin.com/in/jaimesimental" target="_blank")
+          img(src="images/linkedin.svg", alt="Linkedin Social Media Icon")
+      li
+        a(href="https://github.com/jaime171" target="_blank")
+          img(src="images/github.svg", alt="Github Social Media Icon")
+      li
+        a(href="https://behance.net/jaimesimental" target="_blank")
+          img(src="images/behance.svg", alt="Behace Social Media Icon")
+      li
+        a(href="http://missionjimmy.com/tutorial.html" target="_blank")
+          img(src="images/projects.svg", alt="Javascript Tutorial Icon")

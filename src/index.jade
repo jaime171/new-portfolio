@@ -2,17 +2,49 @@ extends _layouts/base
 
 include _modules/link/link
 include _modules/nav/nav
+include _modules/header/header
+include _modules/footer/footer
 
 block content
   +nav
-  include _layouts/header
+  +header
   .container
-    .yeogurt-info
-      h1 Welcome to Yeogurt!
-      p.
-        Take a look at the
-        #[+link({text: 'documentation'})(href='https://github.com/larsonjj/generator-yeogurt#yeogurt-generator---')]
-        and start mixing up something awesome.
-      p
-        img.logo(src="images/yeogurt-swirl.png", width="75px")
-  code.version v1.5.0
+    section.section-1.center
+      p "Code like your life depends on it" 
+      #[+link({text:'about me'})(href='/about')]
+    section.section-2
+      p.center Saltillo, Mexico
+    section.section-3.center
+      h3 Advertising Campaigns 
+      .video-container
+        .videos#trigger-0
+          video(id="video-0", controls poster="images/video-1.jpg")
+          span.triggers Full Charge
+        .videos#trigger-1
+          video(id="video-1", controls poster="images/video-1.jpg")
+          span.triggers Must Unite
+        .videos#trigger-2
+          video(id="video-2", controls poster="images/video-1.jpg")
+          span.triggers La Raiz
+    section.section-4.center
+      h3 "Picture worth a thousand words"
+      #instafeed
+    section.section-5.center
+      p Thank you very much, feel free to check my other social networks and hope we can work together
+  +footer
+
+
+
+
+
+
+  //- .container
+  //-   .yeogurt-info
+  //-     h1 Welcome to Yeogurt!
+  //-     p.
+  //-       Take a look at the
+  //-       #[+link({text: 'documentation'})(href='https://github.com/larsonjj/generator-yeogurt#yeogurt-generator---')]
+  //-       and start mixing up something awesome.
+  //-     p
+  //-       img.logo(src="images/yeogurt-swirl.png", width="75px")
+  //- code.version v1.5.0

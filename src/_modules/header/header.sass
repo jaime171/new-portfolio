@@ -1,0 +1,78 @@
+// header styles
+header
+  background-color: $first-color
+  color: white
+  width: 100%
+.topbar-header
+  img
+    width: 150px
+    margin-top: -20px
+  .menu-display
+    float: right
+    font-size: 18px
+    font-weight: bolder
+    padding: 5px 25px 20px 25px
+    text-transform: uppercase
+    span 
+      display: block
+    p
+      cursor: pointer
+  a:hover
+    border: none
+.hero
+  margin: 0 auto
+.hero-about
+  h1
+    padding-bottom: 22%
+h1
+  font-size: 30px
+  padding: 5%
+  margin-top: -30px
+  span:first-of-type
+    background-color: $second-color
+    line-height: 1.5;
+    margin-top: 5px
+    padding: 2px
+  span:last-of-type
+    border-bottom: solid $second-color 4px
+    font-size: 28px
+    margin-left: 10px
+    text-transform: uppercase
+h2
+  font-size: 23px
+  margin-top: -40px
+  padding: 20px 10px 45px 10px
+
+
+@media (min-width:641px)
+  .topbar-header
+    img
+      width: 200px
+  h1
+    font-size: 50px
+    margin: 0
+    span:last-of-type
+      font-size: 50px
+  h2
+    font-size: 30px
+    padding: 40px 50px 65px 50px
+  .topbar-header
+    img
+      width: 180px
+      margin-top: -15px
+    .menu-display
+      font-size: 23px
+  .hero-about
+    h1
+      padding-bottom: 15%
+@media (min-width:1025px)
+  h1
+    font-size: 75px
+    span:last-of-type
+      font-size: 75px
+  h2
+    font-size: 45px
+    padding: 20px 20% 180px 20%
+  .topbar-header
+    img
+      padding: 5px

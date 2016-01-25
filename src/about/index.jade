@@ -1,0 +1,30 @@
+extends ../_layouts/base
+include ../_modules/link/link
+include ../about/nav-about
+include ../about/header-about
+include ../about/footer-about
+block config
+  //- Correct base url pathing for this page
+  - var baseUrl = '../'
+
+block content
+  +nav
+  +header
+  .container
+    section.section-1.center
+      p "The best ideas are the ones that enter through the heart"
+    section.about
+      .left
+        img(src="../images/profile-img.jpg")
+      .right.center
+        h3 About Me
+        p.
+          My name is Jaime Simental, I'm from a little city called Saltillo, Mexico. This city is famous for 
+          #[+link({text: 'sarapes' })(href='https://en.wikipedia.org/wiki/Serape', target='_blank')] a colorful and warm blanket that we use in winter.
+        p Front-End developer, Web Designer, Creative and music addict. I like to work in all kinds of projects, the fact that you can learn something new every single day, makes me excited.
+        p The best part of being a Front-End developer, is to do the work of a translator, and tell stories through code.
+        p If you want to know something else about me, just click any of my social media links.
+
+
+
+  +footer

@@ -6,6 +6,7 @@ var browserSyncLib = require('browser-sync');
 var pjson = require('./package.json');
 var minimist = require('minimist');
 var wrench = require('wrench');
+var cmq = require('gulp-combine-media-queries');
 
 // Load all gulp plugins based on their names
 // EX: gulp-copy -> copy
@@ -32,13 +33,15 @@ gulp.task('default', ['clean'], function() {
   gulp.start('build');
 });
 
+
 // Build production-ready code
 gulp.task('build', [
   'copy',
   'imagemin',
   'jade',
   'sass',
-  'browserify'
+  'browserify',
+  'cmq'  //eliinar esto si no
 ]);
 
 // Server tasks with watch
