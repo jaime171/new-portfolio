@@ -26,20 +26,19 @@ function loadVideos() {
 }
 loadVideos();
 function mediaPlayer() {
-var allVideos = document.getElementsByClassName('videos');
+  var allVideos = document.getElementsByClassName('videos');
 	for (var i = 0; i < allVideos.length; i++) {
 	  allVideos[i].onclick = function() {
-		  console.log(this)
 		  if(this.childNodes[1].paused) {
+        this.childNodes[1].play()
         this.childNodes[2].style.opacity = 0;
         this.childNodes[2].style.zIndex = -1;
-        this.childNodes[1].play()
-		  } else {
-		  	this.childNodes[2].style.opacity = 1;
-    	  this.childNodes[2].style.zIndex = 1;
+      } else {
         this.childNodes[1].pause();
-		  }
-    }
+        this.childNodes[2].style.opacity = 1;
+        this.childNodes[2].style.zIndex = 1;
+      }
+		} 
   }
 }
 mediaPlayer();
