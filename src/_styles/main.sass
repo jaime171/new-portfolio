@@ -64,7 +64,7 @@ li
 
 //Section-2 Styles
 .section-2
-  background: url(/images/bg-section-2.jpg) no-repeat center center fixed
+  background: url(/images/bg-section-2.jpg) no-repeat center center
   -moz-background-size: cover
   -o-background-size: cover
   -webkit-background-size: cover
@@ -170,6 +170,7 @@ video
     a 
       font-size: 25px
   .section-2
+    background-attachment: fixed
     p
       font-size: 45px
       text-shadow: 2px 2px 3px rgba(0, 0, 0, .6)
@@ -192,11 +193,25 @@ video
   .section-5 p 
     margin: 5% 24%
   
-@media (min-width:1025px)
+  //About media queries
+  .left
+    max-width: 400px
+    margin: 0 auto
+  .right
+    max-width: 600px
+    margin: 0 auto
+    padding-bottom: 3%
+
+
+
+
+
+@media (min-width:1025px) //Last media querie
   h3
     font-size: 40px
   .section-1
-    margin: 0 0 7% 0
+    margin: 0 0 1% 0
+    line-height: 100px
     p 
       font-size: 50px
   .section-3
@@ -213,24 +228,33 @@ video
         margin-top: -300px
         font-size: 35px
   //About media queries
+  .about-container
+    width: 1000px
+    margin: 0 auto
+    a 
+      color: $second-color
+    .section-1
+      margin: 0 0 7% 0 
+      p
+        line-height: 53px
   .left
     float: left
-    margin: 0 0 10% 10%
+    margin: 6% 0 10% 10%
     img 
-      width: 450px
-.right
-  float: right
-  width: 500px
-  margin-right: 10%
-  h3
-    margin: 10px;
-    font-size: 30px;
+      width: 100%
+      max-width: 350px
+  .right
+    float: right 
+    width: 390px
+    margin-right: 8%
+    h3
+      margin: 10px;
+      font-size: 30px;
   p 
     margin: 14px
     font-size: 19px
     line-height: 26px
-  a 
-    color: $second-color
+
 
 // Hellpers
 .center

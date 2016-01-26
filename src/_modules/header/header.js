@@ -1,7 +1,4 @@
 'use strict';
-
-// Constructor
-
 var Header = function() {
   var $ = require('jquery');
   $('#triggerDown').on('click', function(){
@@ -10,9 +7,6 @@ var Header = function() {
   $('#triggerUp').on('click', function(){
     $('#menu').slideUp('slow');
   });
-
-
-
 };
 
 module.exports = Header;
